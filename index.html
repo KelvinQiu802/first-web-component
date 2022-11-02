@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="App">
+      <my-button shape="round" color="primary" id="btn1">Hello</my-button>
+      <my-button shape="round" color="warning" id="btn2">World</my-button>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script>
+      document.getElementById('btn1').addEventListener('click', () => {
+        alert('BUTTON 1');
+      });
+      document.getElementById('btn2').addEventListener('click', () => {
+        alert('BUTTON 2');
+      });
+    </script>
+  </body>
+</html>
